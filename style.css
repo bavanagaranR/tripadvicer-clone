@@ -33,6 +33,7 @@ body {
     cursor: pointer;
 }
 
+
 .navbar__s2 {
     display: flex;
     justify-content: space-between;
@@ -841,14 +842,34 @@ font-weight: 600;
     height: 372px;
     width: 100%;
     background-color: #FAF1ED;
-    padding: 40px;
+    display: inline-block;
+    
+    
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+
+padding-left: 0px;
+padding-right: 0px;
+
+
+}
+.section14-inner{
+    width: 1136px;
+    height: 308px;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 150px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: 167px;
+    margin-right: 167px;
+    
 }
 .section14_one{
     width: 176px;
     height: 200px;
+   
+
 
     
     
@@ -870,49 +891,70 @@ font-weight: 600;
     
 }
 .section14_two{
-    height: 45px;
-    width: 365px;
-    padding-left: 200px;
+    height: 200px;
+    width: 368px;
+    margin-left: 200px;
     
 }
 .section14_two small{
     display: block;
+
 }
 .section14_bottom img{
-    height: 50px;
+    height: 40px;
+    width: 40px;
+    margin-right: 16px;
 
 
 }
 .section14_bottom{
     display:flex;
-    position: relative;
+    flex-wrap: wrap;
+    width: 752px;
+    height: 92px;
+    padding-top: 20px;
+    
+    
 }
 .section14_bottom-title{
-    width: 600px;
+    width: 696px;
+    height: 14px;
+    
 }
-.section14_bottom-title small{
+ .section14_bottom-title small{
     font-size:12px;
     color: #8D3369;
-    margin-left: 15px;
+   
 } 
+.section14_bottom-title-list{
+    width: 696px;
+    height: 38px;
+    
+    
+    
 
-.section14_bottom-title ul{
+}
+
+.section14_bottom-title-list ul{
     font-weight:500;
     font-size: 15px;
     display: flex;
     flex-wrap: wrap;
     
+    
 
 
 }
+   
 .section14_bottom-title-list li{
     
     
     display: flex;
     flex-wrap: wrap;
-    margin-left: 15px;
+    margin-right: 10px;
     /* border-bottom: solid 2px black; */
     text-decoration-line:underline;
+    
     
     
     
@@ -922,10 +964,14 @@ font-weight: 600;
 .section14_bottom-para small{
     font-size:12px;
     color: #8D3369;
-    
+    margin-top: 0px;
 }
 .section14_bottom-para{
-    width: 65%;
+    width: 752px;
+    height: 28px;
+    
+    
+
     
 }
 .section14_bottom-para h6{
@@ -937,34 +983,112 @@ font-weight: 600;
 }
 .section14_bottom-scrollbar{
     
-    margin-bottom: 10px;
+    width: 368px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     position: relative;
-    bottom:40px;
+    left: 60%;
+    bottom: 75px;
+
+
+
+    
     
 }
+.scrollbar-one{
+    width: 180px;
+    height:35px;
+}
 .section14_bottom-scrollbar select{
-margin-left: 10px;
+
+ 
 background-color: white;
 border-color: #E9E9E9;
 border-width: 2px;
-width: 170px;
-height: 36px;
+width: 180px;
+height: 35px;
 border-radius: 10px;
 font-weight: 550;
-font-size: 16px;
+font-size: 16px; 
 
 }
 .section14_bottom-emoji{
-   position: relative;
-   right: 150px;
-   top: 10px;
-   gap: 20px;
-   
+    width: 392px;
+    height: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin-right: 0px;
+
+
+  position: relative;
+ left: 58%;
+ bottom: 50px;
    
 
     
 }
-.section14_bottom-emoji {
-    height: 20px;
-    gap: 20px;
+
+.emoji-one{
+    height: 48px;
+    width: 48px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    
 }
+/* media queries */
+ @media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+    
+ }
+ .navbar__s1-list , .navbar__s1-accont{
+    display: none;
+} */
+
+ @media screen and (max-width:800px) {
+    .navbar__s2 , .navbar__s3{
+        display: none;
+
+    }
+   .navbar, .navbar__s1-list , .navbar__s1-accont {
+        display: block;
+
+        
+        padding: 0px 24px;
+    
+        
+    }
+    /* .navbar__s1 h1{
+        margin-left:20%;
+        margin-right: 20%;
+    } */
+ }
+ .navbar__s1-center{
+    display: flex;
+    align-items: center;
+ }
+ @media screen and (max-width:1250px){
+    .navbar , .section2 ,  , .section4 , .section4__box , .section5 , .section5_title , .section5_images , .section6 ,.section6_title , .section6_images , .section11_images , .section11_title , .section7 , .section8 , .section9 , .section10 , .section11 , .section12 , .section13 , .section114 {
+        margin-left: 0;
+        margin-right: 0;
+
+        
+    
+
+    }
+    
+ }
+@media screen and (max-width:1250px) {
+    body{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    
+}
+ 
